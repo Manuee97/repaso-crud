@@ -4,32 +4,19 @@
 
   <h1 style="font-weight: 100">Índice de montañas rusas</h1>
 
+  {{#each coasters}}
   <hr>
-  <a href="#" class="btn btn-sm btn-dark">Ver detalles</a>
-  <h4>Nombre de montaña rusa</h4>
-  <p>Descripción de montaña rusa</p>
-  <small><strong>Longitud: </strong> 000m | <strong>Inversiones: </strong> 0 | <strong>Parque: </strong> XXXXXX</small>
+  <a href="/coasters/{{this._id}}" class="btn btn-sm btn-dark">Ver detalles</a>
+  <a href="/coasters/{{this._id}}/coaster-edit" class="btn btn-sm btn-dark">Editar</a>
+  <a href="/coasters/{{this._id}}/delete" class="btn btn-sm btn-dark">Eliminar</a>
+  <h4>{{this.name}}</h4>
+  <p>{{this.descripcion}}</p>
+  <small><strong>Longitud: </strong> {{this.length}} | <strong>Inversiones: </strong> {{this.inversions}} |
+    <strong>Parque: </strong> {{this.park.name}}</small>
   <hr>
-  <a href="#" class="btn btn-sm btn-dark">Ver detalles</a>
-  <h4>Nombre de montaña rusa</h4>
-  <p>Descripción de montaña rusa</p>
-  <small><strong>Longitud: </strong> 000m | <strong>Inversiones: </strong> 0 | <strong>Parque: </strong> XXXXXX</small>
-  <hr>
-  <a href="#" class="btn btn-sm btn-dark">Ver detalles</a>
-  <h4>Nombre de montaña rusa</h4>
-  <p>Descripción de montaña rusa</p>
-  <small><strong>Longitud: </strong> 000m | <strong>Inversiones: </strong> 0 | <strong>Parque: </strong> XXXXXX</small>
-  <hr>
-  <a href="#" class="btn btn-sm btn-dark">Ver detalles</a>
-  <h4>Nombre de montaña rusa</h4>
-  <p>Descripción de montaña rusa</p>
-  <small><strong>Longitud: </strong> 000m | <strong>Inversiones: </strong> 0 | <strong>Parque: </strong> XXXXXX</small>
-  <hr>
-  <a href="#" class="btn btn-sm btn-dark">Ver detalles</a>
-  <h4>Nombre de montaña rusa</h4>
-  <p>Descripción de montaña rusa</p>
-  <small><strong>Longitud: </strong> 000m | <strong>Inversiones: </strong> 0 | <strong>Parque: </strong> XXXXXX</small>
-  <hr>
+  {{/each}}
+
+
 
 
 
